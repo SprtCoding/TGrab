@@ -1,0 +1,2 @@
+rootProject.name = "T-Grab"
+include ':app'

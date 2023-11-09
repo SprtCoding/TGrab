@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sprtech.t_grab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TGrab">
+        <activity
+            android:name=".about"
+            android:exported="false"
+            android:parentActivityName=".passenger_dashboard"/>
+        <activity
+            android:name=".passenger_notification"
+            android:exported="false"
+            android:parentActivityName=".passenger_dashboard" />
+        <activity
+            android:name=".driver_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".emergency_activity"
+            android:exported="false"
+            android:parentActivityName=".passenger_dashboard" />
+        <activity
+            android:name=".list_of_tricycle"
+            android:exported="false"
+            android:parentActivityName=".passenger_dashboard" />
+        <activity
+            android:name=".booking_activity"
+            android:exported="false"
+            android:parentActivityName=".list_of_tricycle" />
+        <activity
+            android:name=".passenger_profile"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".passenger_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".passenger_location"
+            android:exported="false" />
+        <activity
+            android:name=".passenger_otp_verification"
+            android:exported="false" />
+        <activity
+            android:name=".passenger_contact_info"
+            android:exported="false" />
+        <activity
+            android:name=".passenger_information"
+            android:exported="false" />
+        <activity
+            android:name=".driver_information"
+            android:exported="false" />
+        <activity
+            android:name=".para_tricycle_map"
+            android:exported="false" />
+        <activity
+            android:name=".driver_map"
+            android:exported="false" />
+        <activity
+            android:name=".registration_as"
+            android:exported="false" />
+        <activity
+            android:name=".register_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
